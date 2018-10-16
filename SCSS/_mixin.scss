@@ -1,0 +1,9 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+$font-en: 'Open Sans';
+$font-ch: 'Noto Sans TC';
+
+%maxwid{
+    max-width: 1049px;
+    margin: 0 auto;
+    font-family: $font-ch;
+}

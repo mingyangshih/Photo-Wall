@@ -1,0 +1,88 @@
+html{
+    height: 100%;
+    background-color: rgb(250, 239, 218);
+    font-family: $font-ch;
+}
+.title{
+    h1 {
+        font-size: 32px;
+        display: block;
+        color: invert(rgb(250, 239, 218)); 
+        line-height: 40px;
+        display: block;
+        margin-bottom: 5px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .fb{
+        float: right;
+        vertical-align: top;
+        color: rgb(88, 88, 136);
+        font-size: 32px;
+        margin-top: 10px;
+    }
+}
+
+.navbar{
+    @extend %maxwid;    
+    h2{
+        color: invert(rgb(250, 239, 218));
+        font-size: 30px;
+        line-height: 32px;
+        text-align: center;
+    }
+    
+}
+header{
+    max-width: 100%;
+    margin: 0 auto;
+    font-family: $font-ch;
+    height: 450px;
+    margin:0px 0px 15px 0;
+}
+.photo-wrap{
+    @extend %maxwid;
+    margin-left: 460px;
+    .item{
+        width: 300px;
+        margin: 10px;
+        float: left;
+        border-radius: 5%;
+        padding: 5px;
+        box-sizing: border-box;
+        box-shadow: 0px 1px 3px 1px rgba(26, 25, 24, 0.5);
+    }
+    img{
+        max-width: 100%;
+        border-radius: 5%;
+    }
+}
+.grid{
+    @extend %maxwid;
+    .grid-item{
+        width: 300px;
+        margin: 10px;
+        float: left;
+        border-radius: 5%;
+        padding: 5px;
+        box-sizing: border-box;
+        box-shadow: 0px 1px 3px 1px rgba(26, 25, 24, 0.5);
+    }
+}
+
+
+.footer{
+    max-width: 100%;
+    background-color: bisque;
+    height: 150px;
+}
+.bottom{
+    p{
+        text-align: center;
+        display: block;
+        margin: auto;
+        font-size: 20px;
+        color:invert(bisque);
+        margin-top: 15px;
+    }
+}
