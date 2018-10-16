@@ -7,13 +7,13 @@ $(document).ready(function(){
             columnWidth : 30 
         })
     })
-    // var $life = $('#lifemoment');
-    // $life.imagesLoaded(function(){
-    //     $life.masonry({
-    //         itemSelector : '.item',
-    //         columnWidth : 30 
-    //     })
-    // })
+    var $life = $('#lifemoment');
+    $life.imagesLoaded(function(){
+        $life.masonry({
+            itemSelector : '.item',
+            columnWidth : 30 
+        })
+    })
     
     // light box
     lightbox.option({
