@@ -50,7 +50,7 @@ img {
   max-width: 100%;
   height: auto; }
 
-.navbar, .photo-wrap, .grid {
+.navbar, .grid, .photo-wrap {
   max-width: 1049px;
   margin: 0 auto;
   font-family: "Noto Sans TC"; }
@@ -70,18 +70,14 @@ html {
   text-align: center;
   font-weight: bold; }
 
-.title .fb {
-  float: right;
-  vertical-align: top;
-  color: #585888;
-  font-size: 32px;
-  margin-top: 10px; }
-
-.navbar h2 {
-  color: #051025;
-  font-size: 30px;
-  line-height: 32px;
-  text-align: center; }
+.navbar {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+  .navbar h2 {
+    color: #051025;
+    font-size: 30px;
+    line-height: 32px;
+    text-align: center; }
 
 header {
   max-width: 100%;
@@ -90,25 +86,9 @@ header {
   height: 450px;
   margin: 0px 0px 15px 0; }
 
-.photo-wrap {
-  margin-left: 460px; }
-  .photo-wrap .item {
-    width: 300px;
-    margin: 10px;
-    float: left;
-    border-radius: 5%;
-    padding: 5px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-box-shadow: 0px 1px 3px 1px rgba(26, 25, 24, 0.5);
-    box-shadow: 0px 1px 3px 1px rgba(26, 25, 24, 0.5); }
-  .photo-wrap img {
-    max-width: 100%;
-    border-radius: 5%; }
-
 .grid .grid-item {
-  width: 300px;
-  margin: 10px;
+  width: 31.3333%;
+  margin-bottom: 10px;
   float: left;
   border-radius: 5%;
   padding: 5px;
@@ -117,15 +97,42 @@ header {
   -webkit-box-shadow: 0px 1px 3px 1px rgba(26, 25, 24, 0.5);
   box-shadow: 0px 1px 3px 1px rgba(26, 25, 24, 0.5); }
 
-.footer {
+.grid img {
+  max-width: 100%;
+  border-radius: 5%; }
+
+.photo-wrap .item {
+  width: 31.333%;
+  margin-bottom: 10px;
+  float: left;
+  border-radius: 5%;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0px 1px 3px 1px rgba(26, 25, 24, 0.5);
+  box-shadow: 0px 1px 3px 1px rgba(26, 25, 24, 0.5); }
+
+.photo-wrap img {
+  max-width: 100%;
+  border-radius: 5%; }
+
+#footer {
   max-width: 100%;
   background-color: bisque;
-  height: 150px; }
+  height: 150px;
+  padding-top: 15px; }
+  #footer .icon {
+    text-align: center; }
+  #footer a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 0 auto;
+    color: #795c3a; }
 
 .bottom p {
   text-align: center;
   display: block;
-  margin: auto;
-  font-size: 20px;
+  font-size: 24px;
   color: #001b3b;
   margin-top: 15px; }

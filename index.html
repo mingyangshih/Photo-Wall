@@ -15,7 +15,6 @@
     <!-- script jQuery-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <!-- masonry & imageloaded-->
-    <!-- <script src="js/jquery.masonry.min.js"></script> -->
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <!-- nino slider -->
@@ -30,8 +29,9 @@
 <body>
     <div class="wrap">
         <div class="title">
-            <h1  id="title">Hello welcome to Ming's collections...<br>Hope you would like it.<ins>2</ins></h1>
+            <h1  class="titleh1">Hello welcome to Ming's collections...<br>Hope you would like it.<ins>2</ins></h1>
         </div>
+        <!-- header -->
         <header id="photostack-1" class="photostack photostack-start">
             <div>
                 <!-- default Polaroid without backside -->
@@ -95,74 +95,77 @@
                 </figure>
             </div>
         </header>
+
+        <!-- content -->
         <nav class="navbar">
-            <h2 id="japan">Here are some photos about <del>American's</del><mark>Japan's tour...</mark></h2> 
+            <h2 class="japan">Here are some photos about <del>American's</del><mark>Japan's tour...</mark></h2> 
         </nav>
-        <main class="photo-wrap" id="container">
-            <div class="item">
+        <!-- main -->
+        <main class="grid" >
+            <div class="grid-item">
                 <a href="images/IMG_0752.jpg" data-lightbox="japantrip">
                     <img src="images/IMG_0752.jpg">
                 </a>
             </div>
-            <div class="item">
+            <div class="grid-item">
                 <a href="images/IMG_0788.jpg" data-lightbox="japantrip">
                     <img src="images/IMG_0788.jpg" >
                 </a>
             </div>
-            <div class="item">
+            <div class="grid-item">
                 <a href="images/IMG_0796.jpg" data-lightbox="japantrip">
                     <img src="images/IMG_0796.jpg" >
                 </a>
             </div>
-            <div class="item">
+            <div class="grid-item">
                 <a href="images/IMG_0822.jpg" data-lightbox="japantrip">
                     <img src="images/IMG_0822.jpg" >
                 </a>
             </div>
-            <div class="item">
+            <div class="grid-item">
                 <a href="images/IMG_0897.jpg" data-lightbox="japantrip">
                     <img src="images/IMG_0897.jpg" >
                 </a>
             </div>
-            <div class="item">
+            <div class="grid-item">
                 <a href="images/IMG_0841.jpg" data-lightbox="japantrip"><img src="images/IMG_0841.jpg" >
                 </a>
             </div>
-            <div class="item">
+            <div class="grid-item">
                 <a href="images/IMG_0868.jpg" data-lightbox="japantrip">
                     <img src="images/IMG_0868.jpg" >
                 </a>
             </div>
-            <div class="item">
+            <div class="grid-item">
                 <a href="images/IMG_0871.jpg" data-lightbox="japantrip">
                     <img src="images/IMG_0871.jpg" >
                 </a>
             </div>
-            <div class="item">
+            <div class="grid-item">
                 <a href="images/IMG_0961.jpg" data-lightbox="japantrip">
                     <img src="images/IMG_0961.jpg" >
                 </a>
             </div>
-            <div class="item">
+            <div class="grid-item">
                 <a href="images/IMG_0966.jpg" data-lightbox="japantrip">
                     <img src="images/IMG_0966.jpg" >
                 </a>
             </div>
-            <div class="item">
+            <div class="grid-item">
                 <a href="images/IMG_0838.jpg" data-lightbox="japantrip">
                     <img src="images/IMG_0838.jpg" >
                 </a>
             </div>
-            <div class="item">
+            <div class="grid-item">
                 <a href="images/IMG_0846.jpg" data-lightbox="japantrip">
                     <img src="images/IMG_0846.jpg" >
                 </a>
             </div>
         </main>
         <nav class="navbar">
-            <h2 id="life">Life Moment...</h2> 
+            <h2 class="life">Life Moment...</h2> 
         </nav>
-        <main class="photo-wrap" id="lifemoment">
+        <main class="photo-wrap">
             <div class="item">
                 <a href="images/life/IMG_0708.jpg" data-lightbox="lifemoment">
                     <img src="images/life/IMG_0708.jpg">
@@ -209,22 +212,30 @@
                 </a>
             </div>
             <div class="item">
-                <a href="images/life/IMG_0644.jpg" data-lightbox="lifemoment">
-                    <img src="images/life/IMG_0644.jpg">
-                </a>
-            </div>
-            <div class="item">
                 <a href="images/life/IMG_2518.jpg" data-lightbox="lifemoment">
                     <img src="images/life/IMG_2518.jpg">
                 </a>
             </div>
+            <div class="item">
+                <a href="images/life/IMG_0644.jpg" data-lightbox="lifemoment">
+                    <img src="images/life/IMG_0644.jpg">
+                </a>
+            </div>
         </main>
+        
+        <!-- footer -->
+        <footer id="footer">
+            <div class="bottom">
+                <p>&copy;{{message}}<p>
+            </div>
+            <div class="icon">
+                <a href="https://www.facebook.com/profile.php?id=100000293214277" class="fb" target="_blank"></a>
+                <a href="https://github.com/mingyangshih/Photo-Wall" class="git" target="_blank"></a>
+            </div>    
+        </footer>
     </div>
-    <footer class="footer">
-        <div class="bottom">
-                <p>&copy; 2018 Ming-Yang Shih<p>
-        </div>
-    </footer>
+    
+    
     
     <script src="js/classie.js"></script>
     <script src="js/photostack.js"></script>
@@ -236,6 +247,8 @@
         } );
     </script>
     <script src="js/lightbox.js"></script>
+    <script  src = "https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js" ></script>
+
     <script src="js/all.js"></script>
 </body>
 </html>
